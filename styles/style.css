@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1600px;
+}
+header {
+    margin: 0 auto;
+    height: 941px;
+    background:url("../img/Header-bg.png") center top no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+nav {
+    max-width: 1200px;
+    height: 90px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 631px;
+    height: 90px;
+    justify-content: space-between;
+}
+nav li {
+    list-style: none;
+    line-height: 90px;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid rgba(255,255,255,255);
+}
+nav a {
+    font-family: ﻿"LatoMedium", serif;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 255);
+    text-align: left;
+    text-decoration: none;
+}
+.header-text{
+    height: 851px;
+    text-align: center;
+    margin-top: 335px;
+
+}
+.header-text h1 {
+    font-family: ﻿MyriadPro, serif;
+    font-size: 4em;
+    color: rgba(255, 255, 255, 255);
+}
+.header-text p {
+    margin-top: 12px;
+    font-family: ﻿Georgia-Italic, serif;
+    font-style: italic;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 255);
+}
+
+
+@font-face {
+font-family: "LatoMedium";
+src: url("../fonts/Lato-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
