@@ -1,7 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+body {
+
 }
 
 header {
@@ -12,7 +17,7 @@ header {
     background-size: cover;
     position: relative;
 }
-nav {
+header nav {
     max-width: 1200px;
     height: 90px;
     margin: 0 auto;
@@ -21,22 +26,22 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-nav ul {
+header nav ul {
     display: flex;
     align-items: center;
-    width: 631px;
+    width: 53%;
     height: 90px;
     justify-content: space-between;
 }
-nav li {
+header nav li {
     list-style: none;
-    line-height: 89px;
+    line-height: 91px;
 }
 
-nav ul li:hover {
+header nav ul li:hover {
     border-bottom: 1px solid rgba(255,255,255,255);
 }
-nav a {
+header nav a {
     font-family: 'Lato-Medium', serif;
     font-size: 0.95em;
     color: rgba(255, 255, 255, 255);
@@ -48,7 +53,7 @@ nav a {
     margin-top: 21%;
 
 }
-.header-text h1 {
+.header-text h2 {
     font-size: 4em;
     font-family: 'Lato-Black', serif;
     color: rgba(255, 255, 255, 255);
@@ -61,15 +66,14 @@ nav a {
     text-align: center;
 }
 .buttons {
-    background-color: rgb(47, 171, 108);
     position: absolute;
     bottom: 0;
     left: 0;
-    
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    background-color: rgb(47, 171, 108);
 }
 .buttons a {
     height: 122px;
@@ -80,13 +84,8 @@ nav a {
     text-decoration: none;
 }
 .buttons a:first-child {
-    background-color: rgb(33, 66, 75);
-}
-.buttons a:first-child:hover {
-    background-color: rgb(53, 106, 121);
-}
-.buttons a:last-child:hover {
-    background-color: rgb(77, 206, 141);
+    background: rgb(33, 66, 75);
+    clip-path: polygon(100% 0, 96% 100%, 0 100%, 0 0);
 }
 .buttons p {
     color: rgb(255, 255, 255);
@@ -95,6 +94,7 @@ nav a {
     font-weight: 900;
     text-transform: uppercase;
 }
+
 .domain {
     height: 578px;
     display: flex;
@@ -102,7 +102,7 @@ nav a {
     align-items: center;
 }
 .domain .wrap {
-    width: 892px;
+    max-width:80%;
     height: 408px;
     display: flex;
     flex-direction: column;
@@ -133,12 +133,12 @@ nav a {
     align-items: center;
     height: 100%;
     color: rgb(217, 217, 217);
-    width: 72px;
+    width: 10%;
     border-right: 1px solid rgb(217, 217, 217);
 }
 .input input {
     border: none;
-    width: 733px;
+    width: 80%;
     height: 100%;
     padding-left: 2%;
     font-size: 0.95em;
@@ -327,7 +327,7 @@ nav a {
     font-family: 'Lato-Black', serif;
 }
 .team .social {
-    width: 95px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -399,7 +399,127 @@ nav a {
     color: rgb(126, 126, 126);
     font-weight: bold;
 }
-
+footer {
+    height: 294px;
+    background-color: rgb(42, 42, 42);
+    margin: 0 auto;
+}
+footer nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+footer nav ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+footer nav ul li {
+    list-style: none;
+}
+footer nav a {
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(78, 78, 78);
+    font-family: 'Lato-Black', serif;
+}
+footer nav ul a:hover {
+    color: rgb(255, 255, 255);
+}
+footer img {
+    opacity: 0.6;
+}
+footer .wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .area1 {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .area1 p {
+    color: rgb(104, 104, 104);
+    font-size: 1em;
+    font-family: 'Myriad Pro', serif;
+    line-height: 2em;
+}
+footer .area1 .bold {
+    font-weight: bold;
+}
+footer .area2 {
+    display: flex;
+    height: 50%;
+    width: 43%;
+    flex-direction: row;
+    justify-content: space-around;
+    border-left: 1px solid rgba(255, 255, 255, .15);
+    border-right: 1px solid rgba(255, 255, 255, .15);
+}
+footer .area2 ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+}
+footer li {
+    list-style: none;
+}
+footer li a{
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    color: rgb(104, 104, 104);
+    font-family: 'Lato-Medium', serif;
+    text-decoration: none;
+}
+footer li p {
+    margin-left: 10%;
+}
+footer li a:hover {
+    color: rgb(255, 255, 255);
+    width: 150%;
+}
+footer .area3 {
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .area3 a {
+    width: 100%;
+    color: rgb(104, 104, 104);
+    font-size: 0.8em;
+    font-family: 'Lato-Medium', serif;
+    text-decoration: none;
+    display: flex;
+}
+footer .area3 a p {
+    font-size: 0.8em;
+    margin-left: 10px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+footer .area3 a:hover {
+    color: rgb(255, 255, 255);
+}
+footer .area3 span {
+    color: rgb(104, 104, 104);
+    font-size: 0.8em;
+    font-family: 'Lato-Medium', serif;
+}
 
 @font-face {
     font-family: 'Lato-Black';
