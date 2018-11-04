@@ -64,6 +64,8 @@ nav a {
     background-color: rgb(47, 171, 108);
     position: absolute;
     bottom: 0;
+    left: 0;
+    
     width: 100%;
     display: flex;
     justify-content: center;
