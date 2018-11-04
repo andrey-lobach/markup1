@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+
+}
 header {
     margin: 0 auto;
     height: 1064px;
@@ -182,6 +185,11 @@ nav a {
     display: flex;
     flex-direction: column;
 }
+.table p {
+    font-size: 1em;
+    color: rgb(217, 217, 217);
+    font-weight: bold;
+}
 .table div {
     height: 50%;
     width: 100%;
@@ -196,6 +204,7 @@ nav a {
 .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
     border-top: 1px solid rgb(217, 217, 217);
     border-left: 1px solid rgb(217, 217, 217);
+    position: relative;
 }
 .box5, .box6, .box7, .box8 {
     border-bottom: 1px solid rgb(217, 217, 217);
@@ -203,11 +212,55 @@ nav a {
 .box4, .box8 {
     border-right: 1px solid rgb(217, 217, 217);
 }
-
-
-
-
-
+.table:after {
+    content: '';
+    width: 98%;
+    height: 13px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.table:before {
+    content: '';
+    width: 98%;
+    height: 13px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    z-index: 2;
+}
+.box1:after {
+    content: '';
+    width: 25px;
+    height: 10%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.box1:before, .box2:before, .box3:before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.box4:after {
+    content: '';
+    width: 25px;
+    height: 10%;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
 @font-face {
     font-family: 'Lato-Black';
     src: url('../fonts/Lato-Black.woff2') format('woff2'),
@@ -228,6 +281,11 @@ nav a {
     url('../fonts/MyriadPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+}
+@media screen and (max-width: 1200px) {
+    header, section, footer {
+       padding: 0 20px;
+    }
 }
 
 
