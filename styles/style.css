@@ -237,12 +237,10 @@ header nav a {
 
 .input select {
     height: 100%;
+    padding-left: 1%;
+
     font-size: 1em;
     outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding-left: 1%;
 
     border: none;
     color: rgb(217, 217, 217);
